@@ -13,9 +13,18 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
-        font-size: 80px;
-font-style: normal;
-//margin-left: 20px;
+    font-size: 80px;
+	font-style: normal;
+	//margin-left: 20px;
+
+	@include media(0) {
+      font-size: 40px;
+    }
+
+    @include media(1000px) {
+    	font-size: 80px;
+    }
+
 }.flaticon-application5:before {
 	content: "\e000";
 }
