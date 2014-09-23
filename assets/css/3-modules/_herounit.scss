@@ -6,11 +6,12 @@
   $hero-image: '/assets/img/bg.jpg';
 
   //@include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background: url($hero-image) fixed;
-  background-color: #e74c3c;
+  //background: url($hero-image) fixed;
+  background-color: #34495e;
   background-repeat: no-repeat;
   //background-position: top;
   background-size: cover;
+  @include transition (all .5s ease-in-out);
 
   .hero-logo img {
     height: 3em;
@@ -67,19 +68,25 @@
   .icon-item {
     display: inline-block;
     background: #fff;
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
     text-align: center;
+    cursor: pointer;
+    @include transition (all .5s ease-in-out);
 
     @include media($small-screen) {
       width: 75px;
       height: 75px;
+      padding: 7px;
     }
 
     @include media($large-screen) {
       width: 150px;
       height: 150px;
+      padding: 5px;
+    }
+
+    &:hover {
+      background: transparent;
     }
 
     i {

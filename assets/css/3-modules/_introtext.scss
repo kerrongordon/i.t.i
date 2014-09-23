@@ -48,6 +48,7 @@
 
   p {
     margin: auto;
+    font-size: 1.21rem;
 
     @include media($large-screen) {
       width: $intro-text-width;

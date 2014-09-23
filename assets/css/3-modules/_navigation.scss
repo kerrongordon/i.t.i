@@ -15,7 +15,7 @@ header.navigation {
   $horizontal-bar-mode: $large-screen;
 
   //background-color: $navigation-background;
-  border-bottom: 1px solid lighten($navigation-background, 50);
+  //border-bottom: 1px solid lighten($navigation-background, 50);
   height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -91,7 +91,7 @@ header.navigation {
     z-index: 9999999;
     float: none;
     @include media ($horizontal-bar-mode) {
-      float: left;
+      float: right;
     }
   }
 
@@ -123,6 +123,7 @@ header.navigation {
     text-align: center;
     width: 100%;
     z-index: 9999;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23);
 
     @include media ($horizontal-bar-mode) {
       background: transparent;
@@ -130,6 +131,7 @@ header.navigation {
       line-height: $navigation-height;
       text-decoration: none;
       width: auto;
+      box-shadow: none;
     }
 
     a {

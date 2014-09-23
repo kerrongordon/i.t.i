@@ -15,7 +15,7 @@
   position: relative;
     
   .grid-item {
-    @include transition (all 0.2s ease-in-out);
+    @include transition (all 0.3s ease-in-out);
     height: $grid-item-height;
     background: $grid-item-background;
     width: 100%;
@@ -31,7 +31,7 @@
     }
 
     &:hover {
-      background: transparentize($grid-item-color, .95);
+      background: #ecf0f1;
     }
   }
 
@@ -43,7 +43,7 @@
     }
 
   .grid-item h1 {
-      color: $grid-item-color;
+      color: $accent-color;
       font-size: 1.3em;
       margin-bottom: .4em;
     }
@@ -51,7 +51,7 @@
   .grid-item p {
       color: transparentize($grid-item-color, .4);
       @include media($medium-screen) {
-        max-width: 70%;
+        //max-width: 70%;
         font-size: 1.0rem;
       }
     }

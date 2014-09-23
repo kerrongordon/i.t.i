@@ -1,0 +1,61 @@
+#menu
+menu:
+- {name: 'Home', link: '/', }
+- {name: 'News', link: '/news', }
+- {name: 'Virtual Training', link: '/virtual-training', }
+- {name: 'Training Materials', link: '/training-materials', }
+- {name: 'Partners', link: '/partners', }
+- {name: 'About', link: '/about', }
+- {name: 'Contact', link: '/contact', }
+
+
+# home page grid-items
+
+grideitems:
+- {name: 'kerron', 
+	img: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png', 
+	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>',
+	link: 'kkk', 
+	class: 'grid-item', }
+- {name: 'gordon', 
+	img: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png', 
+	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
+	link: 'kkk', 
+
+	class: 'grid-item',}
+
+- {name: 'gordon', 
+	img: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png', 
+	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
+	link: 'kkk', 
+	class: 'grid-item',}
+
+- {name: 'gordon', 
+	img: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png', 
+	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
+	link: 'kkk', 
+	class: 'grid-item',}
+
+- {name: 'gordon', 
+	img: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png', 
+	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
+	link: 'kkk', 
+	class: 'grid-item grid-item-big',}
+
+- {name: 'gordon', 
+	img: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png', 
+	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
+	link: 'kkk', 
+	class: 'grid-item',}
+
+- {name: 'gordon', 
+	img: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png', 
+	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
+	link: 'kkk', 
+	class: 'grid-item',}
+
+- {name: 'gordon', 
+	img: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png', 
+	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
+	link: 'kkk', 
+	class: 'grid-item',}

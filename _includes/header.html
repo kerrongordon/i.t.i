@@ -6,23 +6,10 @@
       <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
       <div class="nav">
         <ul id="navigation-menu">
-          <li class="nav-link"><a href="/news">News</a></li>
-          <li class="nav-link"><a href="/virtual-training">Virtual Training</a></li>
-          <li class="nav-link"><a href="/training-materials">Training Materials</a></li>
-          <li class="nav-link"><a href="/partners">Partners</a></li>
-          <li class="nav-link"><a href="/about">About</a></li>
-          <li class="nav-link"><a href="/contact">Contact</a></li>
+        {% for menu in site.data.settings.menu %}
+          <li class="nav-link"><a href="{{ menu.link }}">{{ menu.name }}</a></li>
+        {% endfor %}
         </ul>
-      </div>
-      <div class="navigation-tools">
-        <div class="search-bar">
-          <div class="search-and-submit">
-            <input type="search" placeholder="Enter Search" />
-            <button type="submit">
-              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="">
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   </header>
