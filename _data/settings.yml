@@ -1,12 +1,40 @@
 #menu
 menu:
-- {name: 'Home', link: '', }
-- {name: 'News', link: 'news', }
-- {name: 'Virtual Training', link: 'virtual-training', }
-- {name: 'Training Materials', link: 'training-materials', }
-- {name: 'Partners', link: 'partners', }
+- {name: 'Home', link: '/', }
+- {name: 'News', link: '/news', }
+- {name: 'Virtual Training', link: '/virtual-training', }
+- {name: 'Training Materials', link: '/training-materials', }
+- {name: 'Partners', link: '/partners', }
+- {name: 'About', link: '/about', }
+- {name: 'Contact', link: '/contact', }
+
+#footer mmenu
+
+#Content
+content:
+- {h3: 'Content', }
 - {name: 'About', link: 'about', }
 - {name: 'Contact', link: 'contact', }
+- {name: 'Partners', link: 'partners', }
+
+
+#Follow Us
+followus:
+- {h3: 'Follow Us', }
+- {name: 'Facebook', link: 'javascript:void(0)', }
+- {name: 'Twitter', link: 'javascript:void(0)', }
+- {name: 'YouTube', link: 'javascript:void(0)', }
+
+
+#Legal
+legal:
+- {h3: 'Legal', }
+- {name: 'Terms and Conditions', link: 'javascript:void(0)', }
+- {name: 'Privacy Policy', link: 'javascript:void(0)', }
+
+
+
+
 
 
 # home page grid-items
@@ -15,47 +43,47 @@ grideitems:
 - {name: 'kerron', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>',
-	link: 'kkk', 
+	link: 'javascript:void(0)', 
 	class: 'grid-item', }
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'kkk', 
+	link: 'javascript:void(0)', 
 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'kkk', 
+	link: 'javascript:void(0)', 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'kkk', 
+	link: 'javascript:void(0)', 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'kkk', 
+	link: 'javascript:void(0)', 
 	class: 'grid-item grid-item-big',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'kkk', 
+	link: 'javascript:void(0)', 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'kkk', 
+	link: 'javascript:void(0)', 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'kkk', 
+	link: 'javascript:void(0)', 
 	class: 'grid-item',}

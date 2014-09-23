@@ -1,16 +1,17 @@
+<div class="nav-remove">
   <header class="navigation">
     <div class="navigation-wrapper">
-      <a href="/" class="logo">
-        <img src="{{ site:logo }}" alt="">
+      <a href="{{ site.baseurl }}/" class="logo">
+        <img src="{{ site.baseurl }}{{ site:logo }}" alt="">
       </a>
       <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
       <div class="nav">
         <ul id="navigation-menu">
         {% for menu in site.data.settings.menu %}
-          <li class="nav-link"><a href="/{{ menu.link }}">{{ menu.name }}</a></li>
+          <li class="nav-link"><a href="{{ site.baseurl }}{{ menu.link }}">{{ menu.name }}</a></li>
         {% endfor %}
         </ul>
       </div>
     </div>
   </header>
-  
+</div>

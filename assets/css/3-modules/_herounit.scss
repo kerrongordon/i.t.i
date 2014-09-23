@@ -3,15 +3,22 @@
   $hero-background-bottom: adjust-hue($hero-background-top, -70);
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: '/assets/img/bg.jpg';
+  $hero-image: '../img/bg-2.jpg';
 
   //@include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  //background: url($hero-image) fixed;
+  background: url($hero-image);
   background-color: #34495e;
   background-repeat: no-repeat;
-  //background-position: top;
+  background-position: 50% 30%;
   background-size: cover;
   @include transition (all .5s ease-in-out);
+
+  h1 {
+    background: rgba(255, 255, 255, 0.72);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+  }
 
   .hero-logo img {
     height: 3em;
@@ -86,7 +93,8 @@
     }
 
     &:hover {
-      background: transparent;
+      //background: transparent;
+      @include transform(scale(1.2));
     }
 
     i {

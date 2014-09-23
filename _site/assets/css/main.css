@@ -364,7 +364,10 @@ td, th {
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
   font-size: 80px;
-  font-style: normal; }
+  font-style: normal;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   @media screen and (min-width: 0) {
     [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
     [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
@@ -2537,8 +2540,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2; }
 
 p {
-  margin: 0 0 20px 0;
-  font-size: 13px; }
+  margin: 0 0 20px 0; }
 
 em {
   font-style: italic; }
@@ -2811,10 +2813,153 @@ body {
 .highlight .il {
   color: #099; }
 
+/* Buttons */
+.btn {
+  border: 0;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.87);
+  position: relative;
+  overflow: hidden;
+  padding: 12px 27px;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.btn:hover {
+  color: rgba(255, 255, 255, 0.87); }
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  color: rgba(255, 255, 255, 0.87);
+  outline: none; }
+
+.btn:active {
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+
+.btn.flat {
+  color: #333;
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; }
+
+.btn.flat:focus, .btn.flat:active:focus, .btn.flat.active:focus {
+  color: #333; }
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  opacity: 0.2;
+  color: #333;
+  background-color: #999; }
+
+.btn-sm {
+  font-size: 11px;
+  padding: 4px 10px;
+  line-height: 13px; }
+
+.btn-lg {
+  padding: 20px 26px;
+  font-size: 18px;
+  line-height: 38px; }
+
+/*List ripple styles*/
+ul.ripple {
+  max-width: 220px; }
+
+ul.ripple li {
+  padding: 0;
+  list-style-type: none;
+  /*relative positioning for list items along with overflow hidden to contain the overflowing ripple*/
+  position: relative;
+  overflow: hidden; }
+
+ul.ripple li a {
+  display: block;
+  padding: 12px 0;
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+  /*since the links are dummy without href values*/
+  /*prevent text selection*/
+  user-select: none;
+  /*static positioned elements appear behind absolutely positioned siblings(.ink in this case) hence we will make the links relatively positioned to bring them above .ink*/
+  position: relative; }
+
+/* Animations
+------------------------- */
+/*.ink styles - the elements which will create the ripple effect. 
+ * The size and position of these elements will be set by the JS code. 
+ * Initially these elements will be scaled down to 0% and later animated to 
+ * large fading circles on user click.*/
+.btn.animate {
+  animation: color_change 0.55s ease-in-out;
+  -webkit-animation: color_change 0.55s ease-in-out; }
+
+.ink {
+  display: block;
+  position: absolute;
+  background: #e7e9fd;
+  /* Color: 50 */
+  opacity: 0.1;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  -webkit-transform: scale(0); }
+
+/*animation effect*/
+.ink.animate {
+  background: #333;
+  opacity: 0.4;
+  animation: ripple 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation: ripple 0.65s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.ink.focus {
+  opacity: 0.2;
+  animation: ripplefocus 4s infinite;
+  -webkit-animation: ripplefocus 4s infinite; }
+
+/* Click Animation for ripple.js */
+@keyframes ripple {
+  /*scale the element to 250% to safely cover the entire link and fade it out*/
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); } }
+@-webkit-keyframes ripple {
+  /*scale the element to 250% to safely cover the entire link and fade it out*/
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9); } }
+/* Click Animation for ripple.js */
+@keyframes color_change {
+  /*scale the element to 250% to safely cover the entire link and fade it out*/ }
+@-webkit-keyframes color_change {
+  /*scale the element to 250% to safely cover the entire link and fade it out*/ }
+/* Focus Animation for ripple.js */
+@keyframes ripplefocus {
+  /*scale the element infinitly on focus*/
+  0%, 20%, 100% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8); }
+  60% {
+    transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9); } }
+@-webkit-keyframes ripplefocus {
+  0%, 20%, 100% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8); }
+  60% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9); } }
 header.navigation {
   height: 100px;
-  width: 100%;
-  z-index: 999; }
+  width: 100%; }
   @media screen and (min-width: 0px) {
     header.navigation {
       height: 50px; } }
@@ -2890,15 +3035,14 @@ header.navigation {
         margin: 0;
         padding: 0; } }
   header.navigation ul li.nav-link {
-    background: #333;
+    background: rgba(255, 255, 255, 0.95);
     display: block;
     line-height: 50px;
     overflow: hidden;
     padding-right: .8em;
     text-align: center;
     width: 100%;
-    z-index: 9999;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23); }
+    z-index: 9999; }
     @media screen and (min-width: 1000px) {
       header.navigation ul li.nav-link {
         background: transparent;
@@ -3118,13 +3262,37 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  background: #fff;
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+.nav-remove {
+  width: 100%; }
+  @media screen and (min-width: 0px) {
+    .nav-remove {
+      height: 50px; } }
+  @media screen and (min-width: 1000px) {
+    .nav-remove {
+      height: 100px; } }
+
 .hero {
+  background: url("../img/bg-2.jpg");
   background-color: #34495e;
   background-repeat: no-repeat;
+  background-position: 50% 30%;
   background-size: cover;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
+  .hero h1 {
+    background: rgba(255, 255, 255, 0.72);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px; }
   .hero .hero-logo img {
     height: 3em;
     margin-bottom: 2.5em; }
@@ -3239,7 +3407,11 @@ header.navigation {
         height: 150px;
         padding: 5px; } }
     .icons-list .icon-item:hover {
-      background: transparent; }
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
     .icons-list .icon-item i {
       color: #BD5248; }
     .icons-list .icon-item span {
@@ -3264,7 +3436,7 @@ header.navigation {
   width: 80%; }
   @media screen and (min-width: 0px) {
     .browsers {
-      padding-top: 10em; } }
+      padding-top: 12em; } }
 
 .browser-img {
   margin-bottom: -75px; }

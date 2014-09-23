@@ -19,48 +19,12 @@
      id="defs4146">
     <filter
        inkscape:collect="always"
-       id="filter4795"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="8.9949213"
-         id="feGaussianBlur4797" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter4815"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.9966142"
-         id="feGaussianBlur4817" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter4835"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="4.6130905"
-         id="feGaussianBlur4837" />
-    </filter>
-    <filter
-       inkscape:collect="always"
        id="filter4923"
        color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="4.4974607"
          id="feGaussianBlur4925" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter4957"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="9.9423685"
-         id="feGaussianBlur4959" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -70,9 +34,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="612.79492"
-     inkscape:cy="227.99721"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="599.1116"
+     inkscape:cy="385.51169"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -97,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -240,7 +204,7 @@
           </g>
         </g>
         <rect
-           style="fill:#ff6600;fill-opacity:1;stroke:none"
+           style="fill:#ff5555;fill-opacity:1;stroke:none"
            id="rect4997"
            width="837.85974"
            height="41.422874"
@@ -471,7 +435,7 @@
            height="41.422874"
            width="837.85974"
            id="rect5131"
-           style="fill:#ff6600;fill-opacity:1;stroke:none" />
+           style="fill:#ff5555;fill-opacity:1;stroke:none" />
         <g
            id="g5133">
           <rect
@@ -595,7 +559,7 @@
            inkscape:connector-curvature="0"
            id="rect5195"
            d="m 84.860832,410.63599 837.859738,0 0,41.42287 -837.859738,0 z"
-           style="fill:#ff6600;fill-opacity:1;stroke:none" />
+           style="fill:#ff5555;fill-opacity:1;stroke:none" />
         <g
            id="g5197">
           <path

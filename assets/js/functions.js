@@ -12,4 +12,23 @@ $(document).ready(function() {
     });
   });
 
+  $(window).bind('scroll', function() {
+         if ($(window).scrollTop() > 0 ) {
+             $('.navigation').addClass('fixed animated zoomIn');
+         }
+         else {
+             $('.navigation').removeClass('fixed animated zoomIn');
+         }
+    });
+
+  $(function() {
+    //init ripple effect
+    options = {
+        elements  :'.btn',
+        focus     :'.btn',
+        focusTimeOut: 600
+      };
+    rippleEffect = new $.RippleEffect(options);
+  });
+
 });

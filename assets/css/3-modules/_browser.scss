@@ -16,7 +16,7 @@ $browser-content-background-3: #2ecc71;
   width: 80%;
 
   @include media($small-screen) {
-    padding-top: 10em;
+    padding-top: 12em;
   }
 
   @include media($large-screen) {

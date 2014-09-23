@@ -1,24 +1,25 @@
 <footer class="footer">
     <div class="footer-logo">
-      <img src="{{ site:logo }}" alt="">
+      <img src="{{ site.baseurl }}{{ site:logo }}" alt="">
     </div>
     <div class="footer-links">
       <ul>
-        <li><h3>Content</h3></li>
-        <li><a href="javascript:void(0)">About</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
-        <li><a href="javascript:void(0)">Products</a></li>
+        {% for content in site.data.settings.content %}
+        <li><h3>{{ content.h3 }}</h3></li>
+        <li><a href="{{ content.link }}">{{ content.name }}</a></li>
+        {% endfor %}
       </ul>
       <ul>
-        <li><h3>Follow Us</h3></li>
-        <li><a href="javascript:void(0)">Facebook</a></li>
-        <li><a href="javascript:void(0)">Twitter</a></li>
-        <li><a href="javascript:void(0)">YouTube</a></li>
+        {% for followus in site.data.settings.followus %}
+        <li><h3>{{ followus.h3 }}</h3></li>
+        <li><a href="{{ followus.link }}">{{ followus.name }}</a></li>
+        {% endfor %}
       </ul>
       <ul>
-        <li><h3>Legal</h3></li>
-        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+        {% for legal in site.data.settings.legal %}
+        <li><h3>{{ legal.h3 }}</h3></li>
+        <li><a href="{{ legal.link }}">{{ legal.name }}</a></li>
+        {% endfor %}
       </ul>
     </div>
 
@@ -27,9 +28,10 @@
     <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
   </footer>
 
-  <script src="/assets/js/jquery-2.1.1.min.js"></script>
-  <script src="/assets/js/wow.min.js"></script>
-  <script src="/assets/js/functions.js" type="text/javascript"></script>
+  <script src="{{ site.baseurl }}/assets/js/jquery-2.1.1.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/wow.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/ripple.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/functions.js" type="text/javascript"></script>
   <script>
     new WOW().init();
   </script>

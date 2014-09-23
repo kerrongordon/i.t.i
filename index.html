@@ -6,13 +6,13 @@ layout: home
 	<div class="hero">
 		<div class = "browsers animated fadeInUp">
 		  <div class="browser-img">
-		  	<img src="/assets/img/browser-2.svg">
+		  	<img src="{{ site.baseurl }}/assets/img/browser-2.svg">
 		  </div>
 		</div>
 		<div class="cover">
-			<div class="intro-text space padding-side">
+			<div class="intro-text space padding-side wow fadeIn">
 			  <h2 class="responsive-font">{{ site.title }}</h2>
-			  <p class="responsive-font">Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing. <a href="">Read more <span>&#187;</span></a></p>
+			  <p class="responsive-font">{{ site.description }}</p>
 			</div>
 		</div>
 	</div>
@@ -34,10 +34,10 @@ layout: home
 
 <section>
 	<div class="wrapper space">
-		<div class="grid-items-lines wow zoomIn">
+		<div class="grid-items-lines wow zoomIn" data-wow-delay=".20s">
 			{% for grideitems in site.data.settings.grideitems %}
-		  <a href="{{ grideitems.link }}" class="{{ grideitems.class }}">
-		    <img src="{{ grideitems.img }}" alt="{{ grideitems.img }}">
+		  <a href="{{ grideitems.link }}" class="{{ grideitems.class }} btn">
+		    <img src="{{ site.baseurl }}{{ grideitems.img }}" alt="{{ grideitems.img }}">
 		    <h4>{{ grideitems.name }}</h4>
 		    <p>{{ grideitems.infor }}</p>
 		  </a>
