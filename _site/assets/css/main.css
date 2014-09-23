@@ -2909,11 +2909,12 @@ header.navigation {
         box-shadow: none; } }
     header.navigation ul li.nav-link a {
       color: #65676f;
-      display: inline-block;
+      display: block;
       font-weight: 400; }
       @media screen and (min-width: 1000px) {
         header.navigation ul li.nav-link a {
-          padding-right: 1em; } }
+          padding-right: 1em;
+          display: inline-block; } }
       header.navigation ul li.nav-link a:hover {
         color: black; }
   header.navigation .active-nav-item a {

@@ -7,7 +7,7 @@
       <div class="nav">
         <ul id="navigation-menu">
         {% for menu in site.data.settings.menu %}
-          <li class="nav-link"><a href="{{ menu.link }}">{{ menu.name }}</a></li>
+          <li class="nav-link"><a href="/{{ menu.link }}">{{ menu.name }}</a></li>
         {% endfor %}
         </ul>
       </div>

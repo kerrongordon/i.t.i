@@ -136,11 +136,12 @@ header.navigation {
 
     a {
       color: $text-color;
-      display: inline-block;
+      display: block;
       font-weight: 400;
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
+        display: inline-block;
       }
 
       &:hover {

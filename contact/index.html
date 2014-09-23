@@ -1,26 +1,38 @@
 ---
-layout: default
+layout: page
+title: "Contacat Us"
 ---
+
+
 
 <div class="home padding-side">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li class="space-post">
+  <div class="">
+    <p class="">Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing.
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        
-        {{ post.excerpt }}
+  <form class="space" action="http://getsimpleform.com/messages?form_api_token=<form_api_token>" method="post">
 
-        <a class="post-link-read-more" href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+    <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
 
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- all your input fields here.... -->    
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" class="form-control">
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label>Message</label>
+    <textarea type="text" name="message" class="form-control"></textarea>
+  </div>
+
+    <input type='submit' value='Test form' />
+  </form>
 
 </div>

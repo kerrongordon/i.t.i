@@ -11,8 +11,8 @@ layout: home
 		</div>
 		<div class="cover">
 			<div class="intro-text space padding-side">
-			  <h2>{{ site.title }}</h2>
-			  <p>Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing. <a href="">Read more <span>&#187;</span></a></p>
+			  <h2 class="responsive-font">{{ site.title }}</h2>
+			  <p class="responsive-font">Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing. <a href="">Read more <span>&#187;</span></a></p>
 			</div>
 		</div>
 	</div>
@@ -38,7 +38,7 @@ layout: home
 			{% for grideitems in site.data.settings.grideitems %}
 		  <a href="{{ grideitems.link }}" class="{{ grideitems.class }}">
 		    <img src="{{ grideitems.img }}" alt="{{ grideitems.img }}">
-		    <h1>{{ grideitems.name }}</h1>
+		    <h4>{{ grideitems.name }}</h4>
 		    <p>{{ grideitems.infor }}</p>
 		  </a>
 		  {% endfor %}
