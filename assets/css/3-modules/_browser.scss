@@ -15,6 +15,7 @@ $browser-content-background-3: #2ecc71;
   margin: 0 auto;
   width: 80%;
 
+
   @include media($small-screen) {
     padding-top: 12em;
   }
