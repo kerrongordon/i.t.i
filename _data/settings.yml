@@ -13,28 +13,33 @@ menu:
 #Content
 content:
 - {h3: 'Content', }
-- {name: 'About', link: 'about', }
-- {name: 'Contact', link: 'contact', }
-- {name: 'Partners', link: 'partners', }
+- {name: 'About', link: '/about', }
+- {name: 'Contact', link: '/contact', }
+- {name: 'Partners', link: '/partners', }
 
 
 #Follow Us
 followus:
 - {h3: 'Follow Us', }
-- {name: 'Facebook', link: 'javascript:void(0)', }
-- {name: 'Twitter', link: 'javascript:void(0)', }
-- {name: 'YouTube', link: 'javascript:void(0)', }
+- {name: 'Facebook', link: '/javascript:void(0)', }
+- {name: 'Twitter', link: '/javascript:void(0)', }
+- {name: 'YouTube', link: '/javascript:void(0)', }
 
 
 #Legal
 legal:
 - {h3: 'Legal', }
-- {name: 'Terms and Conditions', link: 'javascript:void(0)', }
-- {name: 'Privacy Policy', link: 'javascript:void(0)', }
+- {name: 'Terms and Conditions', link: '/javascript:void(0)', }
+- {name: 'Privacy Policy', link: '/javascript:void(0)', }
 
 
 
-
+#icons-list
+iconslist:
+- {name: 'Test', icon: 'flaticon-application5', delay: '.20s',}
+- {name: 'Work', icon: 'flaticon-brain2', delay: '.40s',}
+- {name: 'Any Time', icon: 'flaticon-calendar5', delay: '.60s',}
+- {name: 'Online', icon: 'flaticon-online', delay: '.80s',}
 
 
 # home page grid-items

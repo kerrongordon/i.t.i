@@ -12,7 +12,7 @@ layout: home
 		<div class="cover">
 			<div class="intro-text space padding-side wow fadeIn">
 			  <h2 class="responsive-font">{{ site.title }}</h2>
-			  <p class="responsive-font">{{ site.description }}</p>
+			  <p class="">{{ site.description }}</p>
 			</div>
 		</div>
 	</div>
@@ -22,10 +22,9 @@ layout: home
 	<div class="hero space">
 		<div class="wrapper">
 			<div class="icons-list">
-				<div class="icon-item wow bounceIn" data-wow-delay=".20s"><i class="flaticon-application5"></i><span>Test</span></div>
-				<div class="icon-item wow bounceIn" data-wow-delay=".40s"><i class="flaticon-brain2"></i><span>Work</span></div>
-				<div class="icon-item wow bounceIn" data-wow-delay=".60s"><i class="flaticon-calendar5"></i><span>Any Time</span></div>
-				<div class="icon-item wow bounceIn" data-wow-delay=".80s"><i class="flaticon-online"></i><span>Online</span></div>
+				{% for iconslist in site.data.settings.iconslist %}
+				<div class="icon-item wow bounceIn" data-wow-delay="{{ iconslist.delay }}"><i class="{{ iconslist.icon }}"></i><span>{{ iconslist.name }}</span></div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>

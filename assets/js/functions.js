@@ -30,5 +30,4 @@ $(document).ready(function() {
       };
     rippleEffect = new $.RippleEffect(options);
   });
-
 });
