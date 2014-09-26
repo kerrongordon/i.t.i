@@ -271,6 +271,9 @@ header.navigation {
 .fixed {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 99999;
   background: #F6F6F8;
   -webkit-box-shadow: 0 17px 50px 0 rgba(0,0,0,.19);
