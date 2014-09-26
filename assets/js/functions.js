@@ -84,14 +84,14 @@ $(document).ready(function() {
 
 
 
-   $(window).bind("load resize scroll",function(e) {
+  /* $(window).bind("load resize scroll",function(e) {
     var y = $(window).scrollTop();
 
     $(".hero").filter(function() {
         return $(this).offset().top < (y + $(window).height()) &&
                $(this).offset().top + $(this).height() > y;
     }).css('background-position', '50% ' + parseInt(-y / 6) + 'px');
-    });
+    }); */
   
 
   
