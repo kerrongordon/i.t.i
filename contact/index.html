@@ -11,20 +11,16 @@ title: "Contacat Us"
     <p class="">Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo adipisicing elit. Perferendis para mitis eun non ullam atque debitis, illo. Amet, consectetur adipisicing.</p>
   </div>
 
-  <form class="space" action="http://getsimpleform.com/messages?form_api_token=f86ba03a52389827e7e240f60b36d055" method="post">
-
-    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-    <input type='hidden' name='redirect_to' value='{{ site.baseurl }}/thankyou/' />
-
-    <!-- all your input fields here.... -->    
+  <form class="space" action="//forms.brace.io/{{ site.email }}">
+ 
   <div class="form-group">
-    <label>Name</label>
+    <label>Your Name</label>
     <input type="text" name="name" class="form-control" required>
   </div>
 
   <div class="form-group">
-    <label>Email</label>
-    <input type="email" type="email" id="email" name="email" required>
+    <label>Your Email</label>
+    <input type="email" type="email" id="email" name="_replyto" required>
   </div>
 
   <div class="form-group">
