@@ -48,43 +48,43 @@ grideitems:
 - {name: 'kerron', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>',
-	link: 'javascript:void(0)', 
+	link: '/about', 
 	class: 'grid-item', }
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'javascript:void(0)', 
+	link: '/about', 
 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'javascript:void(0)', 
+	link: '/about', 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'javascript:void(0)', 
+	link: '/about', 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'javascript:void(0)', 
+	link: '/about', 
 	class: 'grid-item grid-item-big',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'javascript:void(0)', 
+	link: '/about', 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'javascript:void(0)', 
+	link: '/about', 
 	class: 'grid-item',}
 
 - {name: 'gordon', 
