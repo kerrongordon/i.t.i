@@ -90,13 +90,43 @@ grideitems:
 - {name: 'gordon', 
 	img: '/assets/img/placeholder_logo_1_dark.png', 
 	infor: '<p>Lorem ipsum consectetur dolor sit amet consectetur adipisicing elit.</p>', 
-	link: 'javascript:void(0)', 
+	link: '/about', 
 	class: 'grid-item',}
 
 
 
 #testimonials
 testimonials:
+- {name: 'MyName',
+	jobtitle: 'Designer, CodyHouse',
+	content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptates officiis tempore quae officia! Beatae quia deleniti cum corporis eos perferendis libero reiciendis nemo iusto accusamus, debitis tempora voluptas praesentium.',
+	img: 'avatar-1',}
+
+- {name: 'MyName',
+	jobtitle: 'Designer, CodyHouse',
+	content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	img: 'avatar-2',}
+
+- {name: 'MyName',
+	jobtitle: 'Designer, CodyHouse',
+	content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.',
+	img: 'avatar-3',}
+
+- {name: 'MyName',
+	jobtitle: 'Designer, CodyHouse',
+	content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	img: 'avatar-4',}
+
+- {name: 'MyName',
+	jobtitle: 'Designer, CodyHouse',
+	content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	img: 'avatar-5',}
+
+- {name: 'MyName',
+	jobtitle: 'Designer, CodyHouse',
+	content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	img: 'avatar-6',}
+
 - {name: 'MyName',
 	jobtitle: 'Designer, CodyHouse',
 	content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptates officiis tempore quae officia! Beatae quia deleniti cum corporis eos perferendis libero reiciendis nemo iusto accusamus, debitis tempora voluptas praesentium.',

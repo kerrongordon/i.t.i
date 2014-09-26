@@ -6,7 +6,7 @@ layout: home
 	<div class="hero">
 		<div class = "browsers animated fadeInUp">
 		  <div class="browser-img">
-		  	<img src="{{ site.baseurl }}/assets/img/browser-2.svg">
+		  	<!--<img src="{{ site.baseurl }}/assets/img/browser-2.svg">-->
 		  </div>
 		</div>
 		<div class="cover">
@@ -35,7 +35,7 @@ layout: home
 	<div class="wrapper space">
 		<div class="grid-items-lines wow zoomIn" data-wow-delay=".20s">
 			{% for grideitems in site.data.settings.grideitems %}
-		  <a href="{{ grideitems.link }}" class="{{ grideitems.class }} btn">
+		  <a href="{{ site.baseurl }}{{ grideitems.link }}" class="{{ grideitems.class }} btn">
 		    <img src="{{ site.baseurl }}{{ grideitems.img }}" alt="{{ grideitems.img }}">
 		    <h4>{{ grideitems.name }}</h4>
 		    <p>{{ grideitems.infor }}</p>
