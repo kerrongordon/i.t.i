@@ -48,6 +48,50 @@ layout: home
 </section>
 
 
+<section id="testimonial" class="space">
+	<div class="cd-testimonials-wrapper cd-container">
+	<ul class="cd-testimonials">
+		{% for testimonials in site.data.settings.testimonials %}
+		<li>
+			<p>{{ testimonials.content }}</p>
+			<div class="cd-author">
+				<img src="{{ site.baseurl }}/assets/img/face/{{ testimonials.img }}.jpg" alt="Author image">
+				<ul class="cd-author-info">
+					<li>{{ testimonials.name }}</li>
+					<li>{{ testimonials.jobtitle }}</li>
+				</ul>
+			</div>
+		</li>
+		{% endfor %}		
+	</ul> <!-- cd-testimonials -->
+
+	<a href="#0" class="cd-see-all btn">See all</a>
+</div> <!-- cd-testimonials-wrapper -->
+
+<div class="cd-testimonials-all">
+	<div class="cd-testimonials-all-wrapper">
+		<ul>
+		{% for testimonials in site.data.settings.testimonials %}
+			<li class="cd-testimonials-item">
+				<p>{{ testimonials.content }}</p>
+				
+				<div class="cd-author">
+					<img src="{{ site.baseurl }}/assets/img/face/{{ testimonials.img }}.jpg" alt="Author image">
+					<ul class="cd-author-info">
+						<li>{{ testimonials.name }}</li>
+						<li>{{ testimonials.jobtitle }}</li>
+					</ul>
+				</div> <!-- cd-author -->
+			</li>
+			{% endfor %}
+		</ul>
+	</div>	<!-- cd-testimonials-all-wrapper -->
+
+	<a href="#0" class="close-btn">Close</a>
+</div> <!-- cd-testimonials-all -->
+</section>
+
+
 
 
 
