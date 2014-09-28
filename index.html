@@ -19,11 +19,11 @@ layout: home
 </section>
 
 <section>
-	<div class="hero space">
+	<div class="iconbar space">
 		<div class="wrapper">
 			<div class="icons-list">
 				{% for iconslist in site.data.settings.iconslist %}
-				<div class="icon-item wow bounceIn" data-wow-delay="{{ iconslist.delay }}"><i class="{{ iconslist.icon }} f-icons"></i></div>
+				<div class="icon-item wow bounceIn" data-wow-delay="{{ iconslist.delay }}"><i class="{{ iconslist.icon }} f-icons"></i><span class="title">{{ iconslist.name }}</span></div>
 				{% endfor %}
 			</div>
 		</div>

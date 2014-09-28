@@ -13,7 +13,7 @@ $(document).ready(function() {
   });
 
   $(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 0 ) {
+         if ($(window).scrollTop() > $('.hero').height() ) {
              $('.navigation').addClass('fixed animated fadeInDown');
          }
          else {
