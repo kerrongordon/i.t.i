@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
-  @include transition (all .1s ease-in-out);
+  @include transition (all .5s ease-in-out);
 
   h1 {
     background: rgba(255, 255, 255, 0.72);
@@ -22,37 +22,32 @@
 }
  
 .icons-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  text-align: center;
 
   .icon-item {
-    display: inline-block;
-    background: #fff;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    @include transition (all .5s ease-in-out);
+    @include flex(1);
 
-    @include media($small-screen) {
-      width: 75px;
-      height: 75px;
-      padding: 7px;
-    }
-
-    @include media($large-screen) {
-      width: 150px;
-      height: 150px;
-      padding: 5px;
-    }
-
-    &:hover {
-      //background: transparent;
-      @include transform(scale(1.2));
-    }
-
-    i {
+    .f-icons {
       color: $accent-color;
+      background: #fff;
+      display: inline-block;
+      border-radius: 50%;
+      text-align: center;
+      //cursor: pointer;
+      line-height: 1.8em;
+      @include transition (all .3s ease-in-out);
+
+      @include media($small-screen) {
+        @include size(75px);
+      }
+
+      @include media($large-screen) {
+        @include size(150px);
+      }
+
     }
 
     span {
@@ -75,3 +70,5 @@
     }
   }
 }
+
+

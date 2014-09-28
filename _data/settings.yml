@@ -36,10 +36,11 @@ legal:
 
 #icons-list
 iconslist:
-- {name: 'Test', icon: 'flaticon-application5', delay: '.20s',}
-- {name: 'Work', icon: 'flaticon-brain2', delay: '.40s',}
-- {name: 'Any Time', icon: 'flaticon-calendar5', delay: '.60s',}
-- {name: 'Online', icon: 'flaticon-online', delay: '.80s',}
+- {name: 'Test', icon: 'icon-book-open', delay: '.20s',}
+- {name: 'Work', icon: 'icon-presentation', delay: '.40s',}
+- {name: 'Any Time', icon: 'icon-calendar', delay: '.60s',}
+- {name: 'Online', icon: 'icon-tools', delay: '.80s',}
+- {name: 'Online', icon: 'icon-piechart', delay: '1.0s',}
 
 
 # home page grid-items
@@ -156,3 +157,5 @@ testimonials:
 	jobtitle: 'Designer, CodyHouse',
 	content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 	img: 'avatar-6',}
+
+
